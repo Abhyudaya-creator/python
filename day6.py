@@ -4,9 +4,9 @@
 #     if char == a:
 #         # print("")
 
-def my_fucntion():
-    print("hello world")
-    
+
+print ("hello world")
+
 
 
     
