@@ -1,4 +1,8 @@
 import random
+
+lives=6
+
+
 random_word_list=["apple","banana","cherry","date","elderberry","fig","grape","honeydew","kiwi","lemon"]
 random_word= random.choice(random_word_list)
 print(random_word)
@@ -28,6 +32,13 @@ while not game_over:
             display += "_"
 
     print(display)
+
+    if first_guess not in random_word:
+        lives -= 1
+        if lives == 0:
+            game_over = True
+            print("You lose")
+
     if "_" not in display:
         game_over=True
         print("you win")
